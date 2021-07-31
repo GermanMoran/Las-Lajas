@@ -164,6 +164,19 @@ map.on('click',function(e){
 
 
 
+  
+
+/**const img = ['img/wp1','img/wp2','img/wp3']
+cont = 0;
+
+function Carrusel(contenedor1){
+  contenedor1.addEventListener('click',e =>{
+    let atras = contenedor1.querySelector('.atras'),
+        adelante = contenedor1.querySelector('.adelante'),
+        imgagen = contenedor1.querySelector('.adelante'),
+  })
+}
+**/
 
 
 
