@@ -1,0 +1,390 @@
+@charset "UTF-8";
+
+@font-face { 
+    font-family: 'Cinzel', serif;            /* define una fuente */
+    src: url('fonts/Cinzel-Bold.ttf');       /* indica su ubicación */
+}
+@font-face { 
+    font-family: 'Courgette', cursive;           /* define una segunda fuente */
+    src: url('fonts/Courgette-Regular.ttf');     /* indica su ubicación */
+}
+/*Define propiedades para todo el body*/
+body {
+	background-image: url(Imágenes/santuario.jpg); /*imagen fondo*/
+	margin: auto;	
+	background-repeat: repeat;	
+}
+/* Define el estilo para algunas frases */
+a{
+	color: rgb(0, 0, 0);
+}
+a:link {
+	text-decoration: none;                /* para que no subraye los vínculos */ 	
+}
+a:hover {             /*Color de los vinculos al pasar por encima*/
+    color: rgb(0, 255, 242);
+}
+/* Define el estilo para algunas frases */
+p{
+	color: rgb(173, 24, 24);
+	font-family: 'Courgette', cursive;
+}
+/* Define el estilo del menú de navegación */
+.menunav {
+	justify-content: center;                     /* centra los botones de navegación */
+	display: inline-block;  
+}
+/* Estilo de los botones del menu de navegación */
+.botonMenu {
+	font-family: 'Cinzel', serif;   /* solo funciona si se suministra el archivo de la fuente */
+	font-size: 20px;                 /* tamaño de la fuente */
+	text-align: center;              /* centrar la fuente */
+	width: 191px;                    /* Tamaño de los botones en conjunto */
+	padding:15px 15px 15px 15px;     /* Tamaño de cada botón*/
+	display: inline-block;          /* Elimina las márgenes de los botones */
+	cursor: grabbing;               /* Estilo del cursor al pasar por encima del botón*/
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	background: rgba(255, 255, 255, 0.50);
+	transition-duration: 0.4s;
+	border-radius: 4px;
+}
+.botonMenu:hover {	
+	cursor:grabbing;
+	background-color:  rgb(8, 154, 252);    /* Color del botón cuando pasa el cursor por encima */
+}  
+.botonMenu:visited {
+	color: #000000;                        /* Color de los links ya visitados */
+}
+.SombraTexto{                                   /* Opaca el fondo donde va el contenido */
+    margin: 20px 4%;                            /* Bordes arriba y abajo */
+	background: rgba(255, 255, 255, 0.6);     /* Color del fondo con transparencia */
+	border-radius: 4px;                         /* Borde de la sombra */
+}  
+
+/* Estilo para los titulares */ 
+h1{                                    
+	font-family: 'Cinzel', serif;      /* la fuente se asigna según disponibilidad */
+	color:#fafafa;                   /* color de la fuente*/
+	font-size: 45px;                    /* tamaño de la fuente*/
+	text-shadow: 5px 5px 8px rgb(8, 154, 252);    /* sombra de la fuente*/
+	text-align: center;
+	margin:auto;                    /* margen igual a izquierda y derecha */ 
+	margin-bottom:20px;
+	padding:30px 80px 30px 80px;
+	background: rgba(255, 255, 255, 0.50);   /* Color de la sombra que contiene el texto*/
+	border-radius: 4px;                        /*Genera el borde a la sombra que opaca el fondo*/
+	
+} 
+h1:link {
+	cursor: pointer;
+	text-decoration: none;  /* para que no subraye los vínculos en los titulares*/ 
+}
+h2 {                                    /* estilo para los subtítulos*/ 
+	font-family: 'Courgette', cursive;  /* solo si se suministra el archivo de la fuente */
+	color:#000000;                    /* Color de la fuente*/ 
+	font-size: 33px;                    /* Tamaño de la fuente*/ 
+	text-align: center;                 /* centrar la fuente */
+	margin:auto;
+	padding:10px 10px 2px 10px;         /* arriba, derecha, abajo, izquierda */
+	text-shadow: 5px 5px 8px rgb(8, 154, 252);
+}
+.uno {               /* Estilo para párrafo principal */ 
+	position: relative;
+	max-width:1100px;
+	top: 20px;
+	margin:auto;                         /* margen igual a izquierda y derecha */
+	font-family: 'Courgette', cursive;   /* solo si se suministra el archivo de la fuente */
+	font-size: 23px;                     /* Tamaño de la fuente */ 
+	text-align: justify;                  /* Texto justificado*/
+	color:#000000;                          /* Color de la fuente*/
+	text-shadow: 1px 0px rgb(8, 154, 252);        /* Color de la sombra de la fuente*/
+}
+.dos {            /* estilo para los párrafos */ 
+	position: relative;
+	max-width:700px;                     /* ancho máximo del párrafo */
+	top: 20px;
+	margin:auto;                        /* margen igual a izquierda y derecha */
+	font-family: 'Cinzel', serif  ;     /* solo si se suministra el archivo de la fuente */
+	font-size: 25px;                         /* Tamaño de la fuente*/
+	font-weight: normal;
+	text-align: center;                              /* Texto centrado*/
+	color:#FFFFFF;                                   /* Color de la feunte*/
+	text-shadow: 1px 1px  rgb(8, 154, 252);      /* Color de la sombra de la fuente*/
+	background: rgba(14, 14, 14, 0.7);            /* Color de la sombra que contiene el texto*/
+	border-radius: 4px;                              /* Borde de la ssombra que contiene el texto*/
+}
+
+.tres {                                    /* Estilo para la opción: "Toca para volver arriba"*/
+	position: relative;
+	max-width:640px;                          /* ancho máximo del párrafo */
+	top: 40px;
+	margin:auto;                              /* margen igual a izquierda y derecha */
+	font-family: 'Courgette', cursive;         /* solo si se suministra el archivo de la fuente */
+	font-size: 30px;                                 /* tamaño de la fuente*/
+	font-weight: normal;
+	color:#ffffff;                                 /* Color de la fuente*/
+	text-align: center;                          /* Texto justificado*/
+	background-color: #000000;                    /* Color de la caja que contiene el texto*/
+}
+.cuatro {                                       /* Estilo de parrafo para los créditos del autor */
+	position: relative;
+	max-width:540px;                                 /* ancho máximo del párrafo */
+	top: 20px;
+	margin:auto;                                    /* margen igual a izquierda y derecha */
+	font-family: 'Cinzel', serif;                   /* solo si se suministra el archivo de la fuente */
+	font-size: 30px;                                 /* tamaño de la fuente*/
+	font-weight: normal;
+	color:#000000;                                /* Color de la fuente*/
+	text-align: center;                              /* Texto justificado*/
+	background: rgba(255, 255, 255, 0.80);        /* Color de la sombra que contiene el texto*/
+	border-radius: 4px;                             /* Borde de la ssombra que contiene el texto*/
+}
+.img {                                  /* Estilo de las imágenes*/
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 100%;           
+}
+#btn-menu {
+    display: none;       /* oculta el boton cuando no es necesario*/    
+}
+header {
+    width: 100%; 
+    z-index: 20;        /* coloca el checkbox por encima del contenido*/
+    }
+    
+header label {
+    display: none;
+    widows: 30px;
+    height: 30px;        /* coloca el check box en lugar y tamaños exactos*/
+    position: sticky;
+    left: 30px;
+    top: 50px;
+}
+header label:hover {
+    cursor: pointer;    /* cambia el cursor sobre el checkbox para indicar la interacción*/
+}
+.menu ul{
+    margin-left: 0px; 
+    list-style: none;     /* para evitar los bullit list en la lista*/
+    padding: 0;
+    display: flex;
+}
+.menu li{                       /* Da el tamaño de los botones*/
+    width: 250px;
+    height: 30px;
+    font-size: 16px;
+	text-align: center;
+    color: #df0505;
+    text-decoration: none; 
+    margin-bottom: 25px;
+}
+.menu li a {
+   font-family: 'Cinzel', serif;   /* solo funciona si se suministra el archivo de la fuente */
+	font-size: 20px;                 /* tamaño de la fuente */
+	text-align: center;              /* centrar la fuente */
+	width: 191px;                    /* Tamaño de los botones en conjunto */
+	padding:15px 15px 15px 15px;     /* Tamaño de cada botón*/
+	display: inline-block;          /* Elimina las márgenes de los botones */
+	cursor: grabbing;               /* Estilo del cursor al pasar por encima del botón*/
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	background: rgba(255, 255, 255, 0.50);
+	transition-duration: 0.4s;
+	border-radius: 4px;
+}
+.menu li a:hover {                             /* estilo cuando pasa el cursos encima del boton*/
+	cursor:grabbing;
+	background-color:  rgb(8, 154, 252); 
+}
+
+
+/* cuando la ventana mida menos de 860px */
+@media only screen and (max-width: 860px) {
+	.menu ul{
+		margin-left: 5px; 
+		list-style: none;     /* para evitar los bullit list en la lista*/
+		padding: 0;
+		display: flex;
+	}
+	.menu li{                      /* posición de los botones*/
+		width: 200px;
+		height: 5px;
+		margin-bottom: 25px;
+	}
+	.menu li a {
+	   font-family: 'Cinzel', serif;   /* solo funciona si se suministra el archivo de la fuente */
+		font-size: 15px;                 /* tamaño de la fuente */
+		text-align: center;              /* centrar la fuente */
+		width: 100px;                    /* Tamaño de los botones en conjunto */
+		padding:10px 15px 10px 15px;     /* Tamaño de cada botón*/
+		display: inline-block;          /* Elimina las márgenes de los botones */
+		cursor: grabbing;               /* Estilo del cursor al pasar por encima del botón*/
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		background: rgba(255, 255, 255, 0.7);
+		transition-duration: 0.4s;
+		border-radius: 4px;
+	}
+h1{     /* Título principal */ 
+	color:#fafafa;        /* color de la fuente*/
+	font-size: 40px;        /* tamaño de la fuente*/
+	text-shadow: 5px 5px 8px rgb(8, 154, 252);    /* sombra del texto*/
+	text-align: center;                    /* texto alineado al centro*/
+	max-width: 640px; /* ancho máximo del párrafo */
+	margin:auto;          /* margen igual a izquierda y derecha */ 
+	margin-bottom:20px;
+	padding:20px 10px 10px 10px;      /* Tamaño de la caja*/
+} 
+    h2 {                                /* subtítulos */ 
+	font-size: 24px;                     /* tamaño de la fuente */ 
+	font-style: normal;
+	color: #000000;                     /* color del texto*/ 
+	text-align: center;                    /* texto alineado al centro*/ 
+    max-width: 400px;                    /* ancho del contenido*/ 
+}
+    .uno {                                /* Estilo para párrafos */ 
+	font-size: 18px;                    /* tamaño de la fuente */ 
+	max-width: 600px;                     /* ancho del contenido*/ 
+}
+    .dos {                                 /* Estilo para párrafos */
+	font-size: 17px;                       /* tamaño de la fuente */ 
+	color:#FFFFFF;                        /* color de la fuente */ 
+    text-align: center;                    /*texto centrado*/ 
+    max-width: 900px;                          /* ancho del contenido*/ 
+}
+    .tres {                          /* Estilo para la opción: "Toca para volver arriba"*/
+	font-size: 20px;
+    text-align: center;
+	max-width:250px;  
+}
+.cuatro {                         /* Estilo de parrafo para los créditos del autor */
+	position: relative;
+	max-width:200px;
+	top: 25px;
+	margin:auto;  /* margen igual a izquierda y derecha */
+	font-size: 20px;                                 /* tamaño de la fuente*/
+	font-weight: normal;
+	color:#000000;                                /* Color de la fuente*/
+	text-align: center;
+	background: rgba(255, 255, 255, 0.80);        /* Color de la sombra que contiene el texto*/
+	border-radius: 4px;                             /* Borde de la ssombra que contiene el texto*/
+}
+.img {                              /* Estilo de las imágenes*/
+	margin-left: auto;               /* Margen a la izquierda*/
+	margin-right: auto;              /* Margen a la derecha*/
+	width: 100%;
+	height: 100%;           
+}
+}
+
+/* cuando la ventana mida menos de 650px */
+@media only screen and (max-width: 650px) {
+
+    header label {
+        display: inline-block; /* Se muestra el checkbox cuando se reduce la ventana*/
+         }
+    .menu {
+        position: fixed;  /* sostiene la posición aunque se haga scroll en el contenido */
+		z-index: 70; /* para asegurar que el menu esta por encima de todo lo demás*/
+        width: 30%; /* se refiere al ancho del fondo del menu y no a los botones */
+        margin-left: -60%; /* se oculta porque se coloca por fuera de la ventana*/
+		margin-top: 10px;
+        transition: all 1s;   /* la animación de desplegar el menu dura 1 segundo*/
+    } 
+    .menu ul {
+        flex-direction: column;  /* se despliega en sentido vertical*/
+    } 
+    .menu li {
+    font-family: 'Cinzel', serif ;
+    }
+	.menu li a {
+		padding:5px 15px 5px 15px;                /* modifica el tamaño y color de los botones*/
+		background: rgba(7, 177, 255, 0.9);
+	}
+    #btn-menu:checked ~ .menu {  /* el checkbox controla las dos posiciones del menu */
+        margin: 1px; 
+        } 
+        
+h1{                         /* Título principal */ 
+	color:#fafafa;        /* color de la fuente*/
+	font-size: 35px;        /* tamaño de la fuente*/
+	text-shadow: 4px 4px #0066ff;
+	text-align: center;         /* ttexto centrado*/
+	max-width: 640px; /* ancho máximo del párrafo */
+	margin:auto;          /* margen igual a izquierda y derecha */ 
+	margin-bottom:20px;
+	padding:20px 10px 10px 10px;      /* tamaño de la caja que contiene el titulo */ 
+} 
+        
+h1:link {
+	text-decoration: none;  /* Para que no subraye los vínculos en los titulares*/ 
+}
+h2 {                                 /* subtitulos */ 
+	color:#0c0c0c;
+	text-shadow: 5px 5px 8px rgb(8, 154, 252); 
+	font-size: 22px;
+	max-width: 640px;
+	margin:auto;
+	padding:10px 10px 2px 10px;  /*  arriba, derecha, abajo, izquierda */
+	text-align: center;
+}
+.uno {                /* Estilo para los párrafos */  
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	max-width:450px;
+	top: 20px;
+	font-size: 16px;
+	font-weight: normal;
+	text-align: justify;
+	color:#000000;
+	text-shadow: 0px 0px rgb(0, 0, 0);  
+}
+.dos {                /* Estilo para los párrafos */
+	margin-left: auto;
+	margin-right: auto;
+	position:relative;
+	max-width:640px;
+	top: 20px; 
+	font-size: 18px;
+	font-weight: normal;
+	color:#ffffff;
+	text-align: center;
+	text-shadow: 0px 0px #0066ff;
+}
+.tres {               /* Estilo para la opción: "Toca para volver arriba"*/
+    margin-left: auto;
+    margin-right: auto;
+	position: relative;
+	max-width:640px;
+	top: 20px;
+	margin:auto;           
+	font-size: 20px;
+	font-weight: normal;
+	color:#ffffff;
+	text-align: center;
+}
+.cuatro {       /* Estilo de parrafo para los créditos del autor */
+	position: relative;
+	max-width:200px;
+	top: 20px;
+	margin:auto;                          /* margen igual a izquierda y derecha */
+	font-size: 20px;                                 /* tamaño de la fuente*/
+	font-weight: normal;
+	color:#000000;                                /* Color de la fuente*/
+	text-align: center;
+
+}
+ul {        /* Listas */ 
+	list-style-type: none;    /* quita los "bullit lists" de las listas  */ 
+	margin: -2px 0px -2px -40px;  /* arriba, derecha, abajo, izquierda */
+}
+.img {                                  /* Estilo de las imágenes cuando la pantalla es pequeña*/
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 100%;           
+}
+
+}
