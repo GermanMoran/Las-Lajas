@@ -166,17 +166,45 @@ map.on('click',function(e){
 
   
 
-/**const img = ['img/wp1','img/wp2','img/wp3']
+const imgCarrusel = ['img/wp1.jpg','img/wp2.jpg','img/wp3.jpg','img/wp4.jpg','img/wp5.jpg']
 cont = 0;
+cont1 = 0;
+let contenedorCarrusel = document.querySelector('.carrusel');
+let atras = document.querySelector('.atras');
+let adelante = document.querySelector('.adelante');
+let imagenCarrusel = document.querySelector('.carrusel_image');
 
-function Carrusel(contenedor1){
-  contenedor1.addEventListener('click',e =>{
-    let atras = contenedor1.querySelector('.atras'),
-        adelante = contenedor1.querySelector('.adelante'),
-        imgagen = contenedor1.querySelector('.adelante'),
-  })
-}
-**/
+atras.addEventListener('click', () => {
+  console.log("Funciono atras")
+  if (cont > 0){
+   imagenCarrusel.src = imgCarrusel[cont-1];
+   cont = cont-1
+   console.log(cont)
+  }
+  else{
+    imagenCarrusel.src = imgCarrusel[imgCarrusel.length-1];
+    cont = imgCarrusel.length -1;
+  }
+  
+});
+
+adelante.addEventListener('click', () => {
+  console.log("Funciono adelante")
+
+  if (cont1 < imgCarrusel.length-1){
+   imagenCarrusel.src = imgCarrusel[cont1+1];
+   cont1 = cont1+1
+   console.log(cont1)
+  }
+  else{
+    imagenCarrusel.src = imgCarrusel[0];
+    cont1 = 0;
+  }
+  
+  
+});
+
+
 
 
 
