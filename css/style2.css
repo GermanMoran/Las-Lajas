@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------
-# General
+#  Estilos Generales de la pagina
 --------------------------------------------------------------*/
 body {
     background: #fff;
@@ -41,8 +41,7 @@ body {
     overflow: visible;
     background: #fff url("../img/preloader.svg") no-repeat center center;
   }
-  
-  /* Back to top button */
+
   .back-to-top {
     position: fixed;
     display: none;
@@ -74,7 +73,7 @@ body {
   }
   
   /*--------------------------------------------------------------
-  # Welcome
+  # Bienvenida- Fondo de la pagina
   --------------------------------------------------------------*/
   #hero {
     display: table;
@@ -84,6 +83,7 @@ body {
     background-size: cover;
   }
   
+  /** Estilos para colocar un logo en la pagina **/
   #hero .hero-logo {
     margin: 20px;
   }
@@ -93,8 +93,7 @@ body {
   }
   
   #hero .hero-container {
-    /** This hace mas opaco la figura **/
-    /**background: rgba(0, 0, 0, 0.8);**/
+
     display: table-cell;
     margin: 0;
     padding: 0;
@@ -173,7 +172,7 @@ body {
   }
   
   /*--------------------------------------------------------------
-  # Header
+  # Encabezado de la pagina 
   --------------------------------------------------------------*/
   #header {
     background: #111;
@@ -223,9 +222,9 @@ body {
   }
   
   /*--------------------------------------------------------------
-  # Navigation Menu
+  # Menu de Navegacion
   --------------------------------------------------------------*/
-  /* Nav Menu Essentials */
+  /* Elementos del menu de navegacion*/
   .nav-menu, .nav-menu * {
     margin: 0;
     padding: 0;
@@ -263,7 +262,7 @@ body {
     min-width: 180px;
   }
   
-  /* Nav Menu Arrows */
+
   .sf-arrows .sf-with-ul {
     padding-right: 30px;
   }
@@ -281,7 +280,7 @@ body {
     content: "\f105";
   }
   
-  /* Nav Meu Container */
+  /* Container del menu de navegacion */
   #nav-menu-container {
     float: right;
     margin: 5px 0;
@@ -293,7 +292,7 @@ body {
     }
   }
   
-  /* Nav Meu Styling */
+  /* Estilos del menu de navegacion*/
   .nav-menu a {
     padding: 10px 15px;
     text-decoration: none;
@@ -446,9 +445,9 @@ body {
   }
   
   /*--------------------------------------------------------------
-  # Sections
+  # Secciones de la Pagina
   --------------------------------------------------------------*/
-  /* Sections Common
+  /* Secciones comunes
   --------------------------------*/
   .section-title {
     font-size: 32px;
@@ -481,26 +480,12 @@ body {
     padding: 80px 0;
   }
   
-  #about .profile {
-    text-align: center;
-  }
-  
-  #about .profile .pic {
-    /**border-radius: 50%; **/
-    /*border: 6px solid #fff; **/
-    margin-bottom: 15px;
-    height: 400px;
-    width: 400px;
-  }
-  
   #about .profile .pic img {
     max-width: 100%;
     display: block;
     margin: auto;
-    height: 100%;
     border-radius: 2em;
   }
-  
   
   #about .quote {
     position: relative;
@@ -520,8 +505,8 @@ body {
     top: -8px;
     color: white;
     text-align: justify;
+    margin: 2px 15px;
   }
-  
   #about .quote h1{
     color: white;
     font-size: 40px;
@@ -529,8 +514,6 @@ body {
   }
  
   
-
-
   /* comenzamos con la  Section  ubicacionlajas
   --------------------------------*/
   #ubicacionlajas {
@@ -538,7 +521,6 @@ body {
     padding: 80px 0;
   }
   
-
   #ubicacionlajas .quote {
     position: relative;
     /**background: #fff;**/
@@ -548,7 +530,7 @@ body {
     /**font-style: ; */
     border-radius: 5px;
   }
-  
+
   #ubicacionlajas .quote p {
     display: inline-block;
     font-size: 22px;
@@ -557,6 +539,7 @@ body {
     top: -8px;
     color: white;
     text-align: justify;
+    margin: 2px 15px;
   }
   
   #ubicacionlajas .quote h1{
@@ -565,38 +548,19 @@ body {
   }
 
   
-  
-  
-  
   /* Seccion habitantes de las lajas
   --------------------------------*/
   #habitanteslajas {
     background: #333333;
     padding: 80px 0;
   }
-  
-  #habitanteslajas .profile {
-    text-align: center;
-    margin-top: 100px;
-    margin-left: 40px;
-  }
-  
-  #habitanteslajas .profile .pic {
-    /**border-radius: 50%; **/
-    /*border: 6px solid #fff; **/
-    margin-bottom: 15px;
-    height: 400px;
-    width: 400px;
-    margin-top: 40px;
-  }
-  
+
   #habitanteslajas .profile .pic img {
     max-width: 100%;
     display: block;
     margin: auto;
     border-radius: 2em;
   }
-  
   
   #habitanteslajas .quote {
     position: relative;
@@ -607,7 +571,7 @@ body {
     /**font-style: ; */
     border-radius: 5px;
   }
-  
+
   #habitanteslajas .quote p {
     display: inline-block;
     font-size: 22px;
@@ -616,6 +580,7 @@ body {
     top: -8px;
     color: white;
     text-align: justify;
+    margin: 2px 15px;
   }
   
   #habitanteslajas .quote h1{
@@ -624,36 +589,22 @@ body {
     position: relative;
   }
 
-
   /*  Seccion actividadeslajas
   --------------------------------*/
   #actividadeslajas {
     background: #333333;
     padding: 80px 0;
   }
-  
   #actividadeslajas .profile {
     text-align: center;
   }
-  
-  #actividadeslajas .profile .pic {
-    /**border-radius: 50%; **/
-    /*border: 6px solid #fff; **/
-    margin-bottom: 15px;
-    height: 400px;
-    width: 800px;
-    margin-bottom: 80px;
-    margin-left: 20px;
-    
-  }
-  
+
   #actividadeslajas .profile .pic img {
     max-width: 100%;
     display: block;
     margin: auto;
     border-radius: 2em;
   }
-  
   
   #actividadeslajas .quote {
     position: relative;
@@ -664,7 +615,7 @@ body {
     /**font-style: ; */
     border-radius: 5px;
   }
-  
+
   #actividadeslajas .quote p {
     display: inline-block;
     font-size: 22px;
@@ -673,13 +624,12 @@ body {
     top: -8px;
     color: white;
     text-align: justify;
+    margin: 2px 15px;
   }
-  
   #actividadeslajas .quote h1{
     color: white;
     font-size: 40px;
   }
-
   #actividadeslajas .pic img {
     border-radius: 2em;
     display: block;
@@ -688,24 +638,15 @@ body {
   }
 
 
-
   /* Seccion Historia de las lajas
   --------------------------------*/
   #historialajas {
     background: #333333;
     padding: 80px 0;
    }
-
    #historialajas h1 {
     color: white;
     text-align: center;
-   }
-
-   #historialajas .member img{
-    max-width: 25%;
-    max-height: 2%;
-    display:block;
-    margin:auto;
    }
 
    #historialajas .quote p {
@@ -716,6 +657,7 @@ body {
     top: -8px;
     color: white;
     text-align: justify;
+    margin: 2px 15px;
   }
   #historialajas .pic img {
     border-radius: 2em;
@@ -726,38 +668,7 @@ body {
   
 
 
- /* actividadeslajas queries - Responsive timeline on screens less than 600px wide */
- @media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .timeline::after {
-  left: 31px;
-  }
-  
-  /* Full-width containers */
-  .timeline .containers {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
-  }
-  
-  /* Make sure that all arrows are pointing leftwards */
-  .timeline .containers::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-  }
 
-  /* Make sure all circles are at the same spot */
-  .timeline .left::after, .right::after {
-  left: 15px;
-  }
-  
-  /* Make all right containers behave like the left ones */
-  .timeline .right {
-  left: 0%;
-  }
- }
    
 
 
@@ -817,7 +728,8 @@ body {
   }
 
 
-  
+  /*********** Estilos Generales para el mapa *******************/
+
   /* Estilo para controlar las dimensiones del mapa dentro de la pagina */
 
   .map {
@@ -825,11 +737,16 @@ body {
     width: 100%;
     
   }
-   
+  
+  /** Estilos para el titulo del mapa **/
+
   h1.titulo_mapa{
     text-align: center;
   }
 
+  /*********** Estilos generales para la apgina Creditos **********************/
+
+  
   .SombraTexto{                                   /* Opaca el fondo donde va el contenido */
   margin: 20px 4%;                                /* Bordes arriba y abajo */
 	background: rgba(255, 255, 255, 0.6);         /* Color del fondo con transparencia */

@@ -10,6 +10,7 @@
 var container = document.getElementById("popup");
 var content = document.getElementById("popup-content");
 var popupCloser = document.getElementById("popup-closer");
+
 // Defino el arreglo donde estan alamacenadas todas las imagenes que mediante el uso de Java Script se realiza las interaccioens
 const imgCarrusel = ['img/wp1.jpg','img/wp2.jpg','img/wp3.jpg','img/wp4.jpg','img/wp5.jpg','img/wp7.jpg']
 
